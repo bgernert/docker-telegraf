@@ -8,7 +8,7 @@ LABEL maintainer="Björn Gernert <mail@bjoern-gernert.de>"
 WORKDIR /root
 
 # Update apt and install python3, python3-pysnmp4
-RUN apt-get update && apt-get install -y python3 python3-pysnmp4
+RUN apt-get update && apt-get install -y python3 python3-pysnmp4 python3-requests
 
 # Expose ports
 EXPOSE 8125/udp 8092/udp 8094
